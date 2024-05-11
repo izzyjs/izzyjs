@@ -103,5 +103,6 @@ export default defineConfig({
   assetsBundler: false,
   unstable_assembler: {
     onBuildStarting: [() => import('@adonisjs/vite/build_hook')],
+    onDevServerStarted: [() => import('@izzyjs/route/dev_hook')],
   },
 })
