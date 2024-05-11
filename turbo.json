@@ -2,7 +2,7 @@
   "$schema": "https://turbo.build/schema.json",
   "pipeline": {
     "build": {
-      "dependsOn": ["typecheck","^build", "postbuild"],
+      "dependsOn": ["^build", "postbuild"],
       "outputs": ["dist/**"]
     },
     "typecheck": {},
@@ -10,7 +10,9 @@
       "cache": false,
       "persistent": true
     },
-    "postbuild": {},
+    "postbuild": {
+      "dependsOn": ["^postbuild"]
+    },
     "test": {
       "dependsOn": ["typecheck", "^test"],
       "outputs": ["coverage/**"]
