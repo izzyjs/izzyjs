@@ -1,3 +1,30 @@
 {
-  "name": "izzyjs"
+  "name": "izzyjs",
+  "description": "🛠️ this is a set of tools for adonijs and inertia",
+  "scripts": {
+    "test": "turbo test",
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "typecheck": "turbo typecheck"
+  },
+  "keywords": [
+    "adonis",
+    "adonisjs",
+    "inertiajs",
+    "ziggy",
+    "route",
+    "generator",
+    "typescript"
+  ],
+  "author": "Walaff Fernandes",
+  "license": "MIT",
+  "homepage": "https://github.com/izzyjs/izzyjs#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/izzyjs/izzyjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/izzyjs/izzyjs/issues"
+  },
+  "packageManager": "pnpm@8.15.6"
 }
